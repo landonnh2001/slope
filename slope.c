@@ -13,7 +13,8 @@ int main()
     
     printf("what are you looking for(Y1(1),Y2(2),X1(3),X2(4),slope(5))\n");
         scanf("%d",&unknown);
-    if (unknown==5){
+   if (unknown<=5 && unknown>=1){
+        if (unknown==5){
         printf("what is X1?\n");
         scanf("%f",&X1);
          printf("what is Y1?\n");
@@ -77,6 +78,8 @@ int main()
        Y1=(Y2-(slope*(X2-X1)));
              printf("your Y1 is:%f\n",Y1);
         }
+    }
+    else{printf("enter integer 1-5.\n");}
     
         
         
